@@ -1,4 +1,5 @@
-var colors = require('colors');
+const colors = require('colors');
+
 const oneArray = [0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, "1"];
 const twoArray = [1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, "2"];
 const cArray = [1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, "c"];
@@ -80,5 +81,5 @@ function randomizeCalls(ones, twos, cs){
         }
     }
 }
-
-randomizeCalls(10,22,33);
+//randomizeCalls(1,2,3);
+randomizeCalls(Number(process.argv[2]), Number(process.argv[3]), Number(process.argv[4]));
